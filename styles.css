@@ -116,7 +116,7 @@ body {
   border-top: 1px solid hsl(227, 10%, 46%, 0.2);
 }
 
-.bottom-section span p {
+.text {
   font-size: 10px;
   font-weight: var(--font-weight-regular);
   color: var(--clr-secondary);
