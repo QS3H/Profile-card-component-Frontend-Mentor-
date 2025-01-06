@@ -1,0 +1,131 @@
+:root {
+  /* Fonts */
+  --font-primary: "Kumbh Sans", sans-serif;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* Font sizes */
+  --font-size-300: 0.875rem;
+  --font-size-400: 1.125rem;
+  --font-size-500: 1.25rem;
+  --font-size-600: 1.5rem;
+  --font-size-700: 1.75rem;
+  --font-size-800: 2rem;
+
+  /* Colors */
+  --clr-primary: hsl(185, 75%, 39%);
+  --clr-primary-dark: hsl(229, 23%, 23%);
+  --clr-secondary: hsl(227, 10%, 46%);
+
+  --Neutral-dark-gray: hsl(0, 0%, 59%);
+  --Neutral-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--clr-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  font-family: var(--font-primary);
+}
+
+@media (min-width: 350px) {
+  .profile-card {
+    max-width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+.profile-card {
+  max-width: 350px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 1rem;
+  box-shadow: 0 5px 100px hsla(0, 0%, 0%, 0.25);
+}
+
+.profile-img {
+  display: inline-block;
+  margin-top: -50px;
+  z-index: 1;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.profile-content h1 {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-primary-dark);
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.profile-content h1 span {
+  margin-left: 10px;
+}
+
+.profile-content span {
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-secondary);
+}
+
+.profile-content p {
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-secondary);
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  padding: 30px 50px;
+  border-top: 1px solid hsl(227, 10%, 46%, 0.2);
+}
+
+.bottom-section span p {
+  font-size: 10px;
+  font-weight: var(--font-weight-regular);
+  color: var(--clr-secondary);
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.metric {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  color: var(--clr-primary-dark);
+}
